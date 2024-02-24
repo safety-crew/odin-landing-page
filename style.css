@@ -1,0 +1,81 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General List Style */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 48px;
+}
+
+/* General Anchor Style */
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* Items that use display: flex */
+ul,
+.header-head,
+.header-links,
+.header-main {
+  display: flex;
+}
+
+/* Items that use justify-content: space-between */
+ul,
+.header-head {
+  justify-content: space-between;
+}
+
+/* Header Elements styles */
+.header {
+  background-color: #1f2937;
+}
+
+.header-head,
+.header-main {
+  padding: 16px 100px;
+}
+
+.header-main {
+  gap: 136px;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 70px;
+}
+
+.header-links {
+  align-items: center;
+}
+
+.header-description-head {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  margin-bottom: 8px;
+}
+
+.header-description-body {
+  color: #f9faf8;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.left-header-main button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 0;
+  font-size: 16px;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.right-header-main img {
+  width: 550px;
+}
