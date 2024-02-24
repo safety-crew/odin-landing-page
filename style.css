@@ -2,6 +2,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 /* General List Style */
 ul {
   margin: 0;
@@ -17,7 +21,7 @@ a {
   color: #e5e7eb;
 }
 
-/* Items that use display: flex */
+/* Items that use display: flex; */
 ul,
 .header-head,
 .header-links,
@@ -25,10 +29,22 @@ ul,
   display: flex;
 }
 
-/* Items that use justify-content: space-between */
-ul,
+/* Items that use justify-content: space-between; */
+.header-links ul,
 .header-head {
   justify-content: space-between;
+}
+
+/* Items that use justify-content: center; */
+.header-main,
+.cards-body ul {
+  justify-content: center;
+}
+
+/* Items that use same padding measurements */
+.header-main,
+.personnel-cards {
+  padding: 16px 100px 150px 100px;
 }
 
 /* Header Elements styles */
@@ -36,14 +52,12 @@ ul,
   background-color: #1f2937;
 }
 
-.header-head,
-.header-main {
+.header-head {
   padding: 16px 100px;
 }
 
 .header-main {
   gap: 136px;
-  justify-content: center;
 }
 
 .header-logo img {
@@ -63,8 +77,8 @@ ul,
 
 .header-description-body {
   color: #f9faf8;
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .left-header-main button {
@@ -78,4 +92,27 @@ ul,
 
 .right-header-main img {
   width: 550px;
+}
+
+/* Cards Elements Styles */
+.cards-title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+}
+
+.personnel-image img {
+  width: 200px;
+  height: 200px;
+  border: 5px #3882f6 solid;
+  border-radius: 10px;
+}
+
+.personnel-role {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
 }
